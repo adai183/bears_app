@@ -11,7 +11,7 @@ RUN pip install fastai
 RUN pip install starlette uvicorn python-multipart aiohttp
 
 ADD bears.py bears.py
-ADD usa-inaturalist-cats.pth usa-inaturalist-cats.pth
+ADD data data
 
 # Run it once to trigger resnet download
 RUN python bears.py

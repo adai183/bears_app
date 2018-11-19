@@ -29,7 +29,7 @@ async def get_bytes(url):
 
 app = Starlette()
 
-path = Path("/data/bears)
+path = Path("data/bears")
 classes = ['black', 'grizzly', 'teddys']
 
 data = ImageDataBunch.single_from_classes(path, classes, tfms=get_transforms(), size=224).normalize(imagenet_stats)
